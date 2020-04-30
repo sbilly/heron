@@ -8,11 +8,15 @@
     "gulp-load-plugins": "^1.2.0",
     "gulp-sass": "^2.2.0",
     "gulp-task-listing": "^1.0.1",
-    "gulp-uglify": "^1.5.3"
+    "gulp-uglify": "^1.5.3",
+    "snyk": "^1.316.1"
   },
   "scripts": {
     "build": "gulp build",
     "clean": "gulp clean",
-    "develop": "gulp dev"
-  }
+    "develop": "gulp dev",
+    "snyk-protect": "snyk protect",
+    "prepublish": "npm run snyk-protect"
+  },
+  "snyk": true
 }
